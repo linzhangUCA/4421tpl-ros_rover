@@ -3,6 +3,7 @@
 ## Overview
 The scientists on the Earch are thrilled and encouraged by the successful recovery of Element M2-5 during the R1B rover's mission.
 To futher explore the planet, an upgraded rover, HomeR, will be sent to LSC-001e to sample the java over there.
+The geography of the planet did not change much, and the home base is staying at same location.
 HomeR is featured with:
 - Two [brushed DC motors with encoders](https://www.pololu.com/product/4805) for the controllable differential drive mobile base.
 - An [inertial measurement unit (IMU)](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf) for extra information of the robot's motion.
@@ -13,6 +14,8 @@ In this project, you and your teammate(s) are expected to achieve following goal
 - Test the dead reckoning odometry and analyze the affection of the motion sensors.
 - Adapt new sensors to the ROS framework.
 - Document your designs and usage of the robot using this Github repository.
+
+![ros_rover](/drawings/ros_rover.drawio.png)
 
 
 ## Resources
