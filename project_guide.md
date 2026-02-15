@@ -1,18 +1,17 @@
 # Project Instructions
 
 ## Overview
-Recall the final project of Robotics I.
-Were you struggling with managing the components on the lab rover (despite how naive it was)?
-Have you ever imagined upgrading the rover with extended computers, sensors and actuators?
-
-The [Robot Operating System (ROS)](https://docs.ros.org/en/jazzy/index.html) is here to help.
-With its inherent modularity, which effectively turns software development into a "building block" architecture similar to assembling Legos. 
-Rather than writing a single, monolithic script that is hard to maintain and debug, ROS allows you to break your robot’s complex functions into independent, isolated "nodes" that communicate through a universal messaging system. 
+The scientists on the Earch are thrilled and encouraged by the successful recovery of Element M2-5 during the R1B rover's mission.
+To futher explore the planet, an upgraded rover, HomeR, will be sent to LSC-001e to sample the java over there.
+HomeR is featured with:
+- Two [brushed DC motors with encoders](https://www.pololu.com/product/4805) for the controllable differential drive mobile base.
+- An [inertial measurement unit (IMU)](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf) for extra information of the robot's motion.
+- A [light detection and ranging (LiDAR) sensor](http://bucket.download.slamtec.com/b90ae0a89feba3756bc5aaa0654c296dc76ba3ff/LD108_SLAMTEC_rplidar_datasheet_A1M8_v2.2_en.pdf) for measugin surrounding object's distances.
 
 In this project, you and your teammate(s) are expected to achieve following goals. 
-- Build a mobile base for a coffee delivery robot.
-- Test and verify motor control and inter-computer communications of the robot.
-- Manage the robot with a ROS package and nodes.
+- Develop an autonomous navigation system with the help of the new and upgraded hardware.
+- Test the dead reckoning odometry and analyze the affection of the motion sensors.
+- Adapt new sensors to the ROS framework.
 - Document your designs and usage of the robot using this Github repository.
 
 
