@@ -36,11 +36,15 @@ Write your methodology down in [README](README.md)
 - Write down equations guiding your robot to the destination then plug in actual data/measurements to verify your equations. 
 
 ### 2. ROS Infrastructure
-- Publish RPLidar A1's data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
-- Publish MPU6050's data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
+- Let `/cmd_vel` topic with [`geometry_msgs/Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message be the only one taking care of the mobile base's movement.
+- Publish LiDAR data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
+- Publish IMU data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
 - Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
 - Broadcast transformation from `odom` frame to `base_link` frame at 50 Hz frequency.
-- Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle). 
+- Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle) in [README](README.md).
+- **BONUS**:
+  - Publish and broadcast improved odometry by fusing IMU's and encoders' data.
+  - Launch everything with one command.
 
 ### 3. Odometry
 
