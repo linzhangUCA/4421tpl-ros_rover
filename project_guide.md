@@ -23,10 +23,17 @@ In this project, you and your teammate(s) are expected to achieve following goal
 - ROS official [document](https://docs.ros.org/en/jazzy/index.html) site is the gold.
 
 ## Requirements
-- ROS package(s): with dedicated node(s) for navigation. Need to be uploaded to this repository.
+### Deliverables
+- Upload ROS package(s) with dedicated executables and launch files for navigation.
 - Write [README](README.md).
+- Demonstrate autonoomus navigation.
 
 ### 1. Navigation Strategy
+Describe your navigation strategy with math language. 
+Write your methodology down in [README](README.md)
+- If your robot's navigation is broken down into different phases, specify and briefly describe them.
+- For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
+- Write down equations guiding your robot to the destination then plug in actual data/measurements to verify your equations. 
 
 ### 2. Motion Sensing
 
