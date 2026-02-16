@@ -4,10 +4,9 @@
 The scientists on the Earch are thrilled and encouraged by the successful recovery of Element M2-5 during the R1B rover's mission.
 To futher explore the planet, an upgraded rover, HomeR, will be sent to LSC-001e to sample the java over there.
 The geography of the planet did not change much, and the home base is staying at same location.
-HomeR is featured with:
-- Two [brushed DC motors with encoders](https://www.pololu.com/product/4805) for the controllable differential drive mobile base.
-- An [inertial measurement unit (IMU)](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf) for extra information of the robot's motion.
-- A [light detection and ranging (LiDAR) sensor](http://bucket.download.slamtec.com/b90ae0a89feba3756bc5aaa0654c296dc76ba3ff/LD108_SLAMTEC_rplidar_datasheet_A1M8_v2.2_en.pdf) for measugin surrounding object's distances.
+You roboticists' mission is to develop an approach to navigate HomeR from the sampling site back to the home base autonomously and safely.  
+
+![ros_rover](/drawings/ros_rover.drawio.png)
 
 In this project, you and your teammate(s) are expected to achieve following goals. 
 - Develop an autonomous navigation system with the help of the new and upgraded hardware.
@@ -15,12 +14,34 @@ In this project, you and your teammate(s) are expected to achieve following goal
 - Adapt new sensors to the ROS framework.
 - Document your designs and usage of the robot using this Github repository.
 
-![ros_rover](/drawings/ros_rover.drawio.png)
-
-
 ## Resources
-- Please refer to HomeR's [documentation](https://linzhanguca.github.io/homer_docs) if you need to be inspired.
-- ROS official [document](https://docs.ros.org/en/jazzy/index.html) site is the gold.
+- HomeR [documentation](https://linzhanguca.github.io/homer_docs).
+- ROS 2 Jazzy official [documentation](https://docs.ros.org/en/jazzy/index.html).
+Featured components on HomeR:
+- Two [brushed DC motors with encoders](https://www.pololu.com/product/4805) for the controllable differential drive mobile base.
+- An [inertial measurement unit (IMU)](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf) for extra information of the robot's motion.
+- A [light detection and ranging (LiDAR) sensor](http://bucket.download.slamtec.com/b90ae0a89feba3756bc5aaa0654c296dc76ba3ff/LD108_SLAMTEC_rplidar_datasheet_A1M8_v2.2_en.pdf) for measugin surrounding object's distances.
+
+## Demonstration Debriefing
+### Procedure
+1. Place the robot behind the "Start Line".
+2. Start the autonomous navigation program.
+3. Stop the robot and end the navigation with a visible indication.
+4. Instructor will measure the distance from the robot to the center of the "Home Base"
+5. (Optional) Take interview, one question for each teammember.
+   
+> [!IMPORTANT]
+> - Demonstrations need to be done **before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
+> - Each team has **5 attempts**. Teams with fewer attempts have higher priority in the cue.
+> - **Changes submitted after the demonstration day will not be graded**.
+> - To secure a good demonstration, make sure you and your teammate(s) practice it a couple times ahead. And the batteries are fully charged.
+
+## Bonus Points
+- Mechanical
+- Electrical
+- LiDAR guided navigation
+- Final distance to homne base
+
 
 ## Requirements
 ### Deliverables
@@ -73,19 +94,6 @@ Upload trajectory graph to the repository.
 > **Bonus Points**:
 > - Upload estimated robot trajectory using fused motion sensor data.
 > - Analysis includes fused motion sensing. 
-
-## Demonstration Rules
-> [!IMPORTANT]
-> - Demonstrations need to be done **before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
-> - Each team has **5 attempts**. Teams with fewer attempts have higher priority in the cue.
-> - **Changes submitted after the demonstration day will not be graded**.
-> - To secure a good demonstration, make sure you and your teammate(s) practice it a couple times ahead. And the batteries are fully charged.
-
-## Bonus Points
-- Mechanical
-- Electrical
-- LiDAR guided navigation
-- Final distance to homne base
 
 ## AI Policies
 Please acknowledge AI's contributions according to the policies in the syllabus.
