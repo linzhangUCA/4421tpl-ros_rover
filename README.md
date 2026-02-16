@@ -1,12 +1,14 @@
 > [!WARNING]
 > Please read the [project guide](project_guide.md).
 
-# Robot Name
+# ROS Rover
 
-## Portrait
+## Navigation Methodology
 
-## Mechanical Designs
+## Node Graph
 
-## Electrical Designs
-
-## ROS Nodes
+## Motion Sensor Analysis
+### Encoder Estimated Trajectory
+### IMU Estimated Trajectory
+### Fused Sensors Estimated Trajectory
+### Observations and Conclusions
