@@ -31,11 +31,16 @@ In this project, you and your teammate(s) are expected to achieve following goal
 ### 1. Navigation Strategy
 Describe your navigation strategy with math language. 
 Write your methodology down in [README](README.md)
-- If your robot's navigation is broken down into different phases, specify and briefly describe them.
+- If your robot's navigation is broken down into several phases, specify and briefly describe them.
 - For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
 - Write down equations guiding your robot to the destination then plug in actual data/measurements to verify your equations. 
 
-### 2. Motion Sensing
+### 2. ROS Infrastructure
+- Publish RPLidar A1's data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
+- Publish MPU6050's data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
+- Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
+- Broadcast transformation from `odom` frame to `base_link` frame at 50 Hz frequency.
+- Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle). 
 
 ### 3. Odometry
 
