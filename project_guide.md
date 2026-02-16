@@ -43,7 +43,7 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 - Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
 - Broadcast transformation from `odom` frame to `base_link` frame at 50 Hz frequency.
 - Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle) in [README](README.md).
-- Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
+- Edit related files so that the pakcage(s) can be built by `colcon`. Make sure the executables, launch files, config files, etc. are registered.
 - Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
 - Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
 
@@ -54,18 +54,16 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 > - Launch everything with one command.
 
 ### 3. Motion Sensing Analysis
-
-### 4. ROS Package Organization 
-
-> [!WARNING]
-> Your grade will be hugely discounted if the submitted package failed `colcon build` on instructor's machine.
+- Upload estimated robot trajectory using encoders solely. 
+- Upload estimated robot trajectory using IMU solely. 
+- Compare and analyze performance of these sensors.
 
 > [!NOTE]
-> - To validate if your executable is recognizable by ROS, run command: `ros2 run <package_name> <executable_name>`.
-> - It is students' responsibility to maintain the code running on their teams' Pico boards. Team failed to bring up a functional Pico board during the demonstration will loss 50% of the ROS Package Development credits.
-> - Extra 1% of project total credits will be given to the teams achieved to **launch** all the nodes (include `teleop_twist_joy` node and the `teleop_twist_keyboard` node) with only one command.
+> **Bonus Points**:
+> - Upload estimated robot trajectory using fused motion sensor data.
+> - Analysis includes fused motion sensing. 
 
-### 6. AI Policies
+### AI Policies
 Please acknowledge AI's contributions according to the policies in the syllabus.
 
 ## Demonstration Rules
