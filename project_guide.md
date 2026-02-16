@@ -20,14 +20,11 @@ In this project, you and your teammate(s) are expected to achieve following goal
 
 ## Resources
 - Please refer to HomeR's [documentation](https://linzhanguca.github.io/homer_docs) if you need to be inspired.
-- Mechanical designs using FreeCAD and 3D printable parts of HomeR are hosted here: [https://github.com/linzhangUCA/homer_me](https://github.com/linzhangUCA/homer_me).
-- KiCAD designs of the electronics relay PCB are hosted here: [https://github.com/linzhangUCA/homer_ee](https://github.com/linzhangUCA/homer_ee).
-- MicroPython scripts for controlling the differential drive mobile base of the HomeR can be found here: [https://github.com/linzhangUCA/homer_pico](https://github.com/linzhangUCA/homer_pico).
 - ROS official [document](https://docs.ros.org/en/jazzy/index.html) site is the gold.
 
 ## Requirements
-- Upload your ROS package to this repository.
-- Complete documentation in [README](README.md) (, a practice to inspire interested people).
+- ROS package(s): with dedicated node(s) for navigation. Need to be uploaded to this repository.
+- Write [README](README.md).
 
 ### 1. (5%) Portrait
 - Take a **clear** picture of your robot.
