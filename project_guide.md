@@ -54,8 +54,12 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 > - Launch everything with one command.
 
 ### 3. Motion Sensing Analysis
-- Upload estimated robot trajectory using encoders solely. 
-- Upload estimated robot trajectory using IMU solely. 
+Start a navigation and record the data in `/imu` and `/odom` topics using [`rosbag`](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.html).
+- Upload the recorded `rosbag` file. 
+- Calculate the robot's trajectory using recorded `/odom` (encoder) data.
+Upload trajectory graph to the repository.
+- Calculate the robot's trajectory using recorded `/imu` data.
+Upload trajectory graph to the repository. 
 - Compare and analyze performance of these sensors.
 
 > [!NOTE]
@@ -68,8 +72,8 @@ Please acknowledge AI's contributions according to the policies in the syllabus.
 
 ## Demonstration Rules
 > [!IMPORTANT]
-> - Demonstrations are scheduled on Thursday, 02/12/2026 from 10:50 AM to 1:30 PM at the robotics lab (LSCA 105).
-> - Teams with fewer attempts have higher priority in the cue.
+> - Demonstrations need to be done **before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
+> - Each team has **5 attempts**. Teams with fewer attempts have higher priority in the cue.
 > - **Changes submitted after the demonstration day will not be graded**.
 > - To secure a good demonstration, make sure you and your teammate(s) practice it a couple times ahead. And the batteries are fully charged.
 
