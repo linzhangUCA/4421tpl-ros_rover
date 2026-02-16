@@ -37,28 +37,25 @@ Write your methodology down in [README](README.md)
 
 ### 2. ROS Infrastructure
 - Let `/cmd_vel` topic with [`geometry_msgs/Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message be the only one taking care of the mobile base's movement.
+Publish `/cmd_vel` topic with reasonable values at appropriate instants to navigate the robot to the **HOME BASE**.
 - Publish LiDAR data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
 - Publish IMU data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
 - Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
 - Broadcast transformation from `odom` frame to `base_link` frame at 50 Hz frequency.
 - Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle) in [README](README.md).
-- **BONUS**:
-  - Publish and broadcast improved odometry by fusing IMU's and encoders' data.
-  - Launch everything with one command.
+- Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
+- Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
+- Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
 
-### 3. Odometry
+> [!NOTE]
+> **Bonus Points**:
+> - LiDAR data is not just published, but also used for navigation (e.g. wall following). 
+> - Publish and broadcast improved odometry by fusing IMU's and encoders' data.
+> - Launch everything with one command.
 
-### 4. LiDAR Assistance
+### 3. Motion Sensing Analysis
 
-### 5. ROS Package Organization 
-- (40%) Develop ROS package executable(s) with at least one node to fulfill the following demands:
-  - **Subscribe** to the `/cmd_vel` **topic** and retrieve the correct linear and angular velocity from the embedded [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
-  - **Transmit** the subscribed linear and angular velocity to the Pico board as the reference velocity for the robot.
-  - **Receive** measured velocity from the Pico board at an appropriate rate.
-  - **Publish** a message uDARnder the **`/<your_robot_name>/measured_velocity` topic** at **50 Hz** with a [`Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) **message**.
-- (5%) Edit `setup.py` (or `CMakeLists.txt` if your package is with type of `ament_cmake`) to introduce all your executables to ROS.
-- (5%) Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
-- (10%) Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
+### 4. ROS Package Organization 
 
 > [!WARNING]
 > Your grade will be hugely discounted if the submitted package failed `colcon build` on instructor's machine.
