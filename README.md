@@ -1,5 +1,5 @@
 # ROS Rover
-> [!WARNING]
+> [!IMPORTANT]
 > Please read the [project guide](project_guide.md).
 
 ## Navigation Methodology
