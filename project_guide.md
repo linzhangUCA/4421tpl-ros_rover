@@ -27,7 +27,7 @@ Featured components on HomeR:
 > [!IMPORTANT]
 > This project is the most difficult one among the three this semester.
 Please make sure you are very familiar with the robot and extensive practice ahead of the demonstration is recommended.   
-> - Demonstrations need to be done **on/before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
+> - Demonstrations need to be done **on/before** Thursday, 03/19/2026 1:30 PM at the robotics lab (LSCA 105).
 > - Each team has **5 attempts**. Bonus/Penalty will be given based on the average of 2 best attempts.
 > - **Repository changes submitted after the demonstration day will not be graded**.
 
@@ -48,52 +48,55 @@ Each teammember needs to individually complete the first 4 steps below at least 
 
 
 ## Requirements
-### Deliverables
+**Deliverables**:
 - Upload ROS package(s) with dedicated executables and launch files for navigation.
 - Write [README](README.md).
 - Demonstrate autonoomus navigation.
 
-### 1. Usage Instructions
+### 1. (5%) Usage Instructions
 Assume you are going to use the ROS package(s) developed for this project on a Raspberry Pi and a Ubuntu laptop with newly installed ROS 2 Jazzy.
-- Please write down all the key steps to start the navigation in [README](README.md)
+- (5%) Please write down all the key steps to start the navigation in [README](README.md)
 > [!NOTE]
 > **Bonus Points**:
 > (1%) Copiable Linux commands.
 
-### 2. Navigation Strategy
+### 2. (25%) Navigation Strategy
 Describe your navigation strategy with math language. 
 Write your methodology down in [README](README.md)
-- If your robot's navigation is broken down into several phases, specify and briefly describe them.
-- For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
-- Write down equations guiding your robot to the destination(s). 
+- (5%) Concisely describe steps of the navigation (not operation steps, please focus on robot's decision making).
+- (10%) For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
+- (10%) Write down equations guiding your robot to the destination(s). 
 
-### 3. ROS Infrastructure
-- Let `/cmd_vel` topic with [`geometry_msgs/Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message be the only one taking care of the mobile base's movement.
+> **Bonus Points**:
+> (5%) Reasonable software [flowchart](https://www.lucidchart.com/pages/what-is-a-flowchart-tutorial) or [algorithm table](https://www.overleaf.com/learn/latex/Algorithms).
+
+### 3. (65%) ROS Infrastructure
+- (20%) Let `/cmd_vel` topic with [`geometry_msgs/Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message be the only one taking care of the mobile base's movement.
 Publish `/cmd_vel` topic with reasonable values at appropriate instants to navigate the robot to the "Home Base".
-- Publish LiDAR data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
-- Publish IMU data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
-- Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
-- Broadcast transformation from `odom` frame to `base_link` frame at 50 Hz frequency.
-- Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle) in [README](README.md).
-- Edit related files so that the pakcage(s) can be built by `colcon`. Make sure the executables, launch files, config files, etc. are registered.
-- Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
-- Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
+- (5%) Publish LiDAR data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
+- (5%) Publish IMU data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
+- (5%) Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
+- (5%) Broadcast transformation from `odom` frame to `base_link` frame at 50 Hz frequency.
+- (10%) Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle) in [README](README.md).
+- (5%) Edit related files so that the pakcage(s) can be built by `colcon`. Make sure the executables, launch files, config files, etc. are registered.
+- (5%) Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
+- (5%) Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
 
 > [!NOTE]
 > **Bonus Points**:
-> - Navigate based on estimated odometry (without hard coding). 
-> - LiDAR data is not just published, but also used for navigation (e.g. wall following). 
+> - (10%) Functional navigate based on estimated odometry (without hard coding). 
+> - (10%) LiDAR data is not just published, but also effectively used for navigation (e.g. wall following). 
 > - Publish and broadcast improved odometry by fusing IMU's and encoders' data.
 > - Launch navigation with one command.
 
-### 4. Motion Sensing Analysis
+### 4. (15%) Motion Sensing Analysis
 Start a navigation and record the data in `/imu` and `/odom` topics using [`rosbag`](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.html).
-- Upload the recorded `rosbag` file. 
-- Calculate the robot's trajectory using recorded `/odom` (encoder) data.
+- (2%) Upload the recorded `rosbag` file. 
+- (5%) Calculate the robot's trajectory using recorded `/odom` (encoder) data.
 Upload trajectory graph to the repository.
-- Calculate the robot's trajectory using recorded `/imu` data.
+- (5%) Calculate the robot's trajectory using recorded `/imu` data.
 Upload trajectory graph to the repository. 
-- Compare and analyze performance of these sensors.
+- (3%) Compare and analyze performance of these sensors.
 
 > [!NOTE]
 > **Bonus Points**:
@@ -101,7 +104,7 @@ Upload trajectory graph to the repository.
 > - Analysis includes fused motion sensing. 
 
 ## 5. Other Bonus
-If a student pointed out defects of orignal designs (`homer_docs`, `homer_ee`, `homer_me`, `homer_pico`, `homer_bringup`, `homer_navigation`) **and fixed them**, 1 to 20 bonus points will be given.
+If a student pointed out defects of orignal designs (`homer_docs`, `homer_ee`, `homer_me`, `homer_pico`, `homer_bringup`, `homer_navigation`) **and fixed them**, a maximum 20% bonus points will be given.
 
 ## AI Policies
 Please acknowledge AI's contributions according to the policies in the syllabus.
