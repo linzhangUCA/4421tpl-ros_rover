@@ -86,8 +86,8 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 > **Bonus Points**:
 > - (10%) Functional navigate based on estimated odometry (without hard coding). 
 > - (10%) LiDAR data is not just published, but also effectively used for navigation (e.g. wall following). 
-> - Publish and broadcast improved odometry by fusing IMU's and encoders' data.
-> - Launch navigation with one command.
+> - (5%) Publish and broadcast improved odometry by fusing IMU's and encoders' data.
+> - (1%) Launch navigation with one command.
 
 ### 4. (15%) Motion Sensing Analysis
 Start a navigation and record the data in `/imu` and `/odom` topics using [`rosbag`](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.html).
@@ -100,11 +100,11 @@ Upload trajectory graph to the repository.
 
 > [!NOTE]
 > **Bonus Points**:
-> - Upload estimated robot trajectory using fused motion sensor data.
-> - Analysis includes fused motion sensing. 
+> - (5%) Upload estimated robot trajectory using fused motion sensor data.
+> - (1%) Analysis includes fused motion sensing. 
 
 ## 5. Other Bonus
-If a student pointed out defects of orignal designs (`homer_docs`, `homer_ee`, `homer_me`, `homer_pico`, `homer_bringup`, `homer_navigation`) **and fixed them**, a maximum 20% bonus points will be given.
+If a student pointed out defects of orignal designs (`homer_docs`, `homer_ee`, `homer_me`, `homer_pico`, `homer_bringup`, `homer_navigation`) **and fixed/improved them**, a **maximum** 20% bonus points will be given.
 
 ## AI Policies
 Please acknowledge AI's contributions according to the policies in the syllabus.
