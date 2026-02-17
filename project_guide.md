@@ -5,6 +5,8 @@ The scientists on the Earch are thrilled and encouraged by the successful recove
 To futher explore the planet, an upgraded rover, HomeR, will be sent to LSC-001e to sample the java over there.
 The geography of the planet did not change much, and the home base is staying at same location.
 You roboticists' mission is to develop an approach to navigate HomeR from the sampling site back to the home base autonomously and safely.  
+> [!IMPORTANT]
+> Unfortunately, SLAM is not allowed for this project. 
 
 ![ros_rover](/drawings/ros_rover.drawio.png)
 
@@ -99,7 +101,7 @@ Upload trajectory graph to the repository.
 > - Analysis includes fused motion sensing. 
 
 ## 5. Other Bonus
-If a student pointed out defects of orignal designs **and fixed them**, 1 to 10 bonus points will be given.
+If a student pointed out defects of orignal designs (`homer_docs`, `homer_ee`, `homer_me`, `homer_pico`, `homer_bringup`, `homer_navigation`) **and fixed them**, 1 to 20 bonus points will be given.
 
 ## AI Policies
 Please acknowledge AI's contributions according to the policies in the syllabus.
