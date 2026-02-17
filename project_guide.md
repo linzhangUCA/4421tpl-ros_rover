@@ -23,10 +23,10 @@ Featured components on HomeR:
 
 ## Demonstration Debriefing
 ### Procedure
-1. Place the robot behind the "Start Line".
-2. Start the autonomous navigation program.
+1. Place the robot on/behind the "Start Line".
+2. Start all ROS nodes required by the autonomous navigation.
 3. Stop the robot and end the navigation with a visible indication.
-4. Instructor will measure the distance from the robot to the center of the "Home Base"
+4. Distance from the robot to the center of the "Home Base" will be measured.
 5. (Optional) Take interview, one question for each teammember.
    
 > [!IMPORTANT]
