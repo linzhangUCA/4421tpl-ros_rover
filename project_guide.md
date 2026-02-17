@@ -9,9 +9,9 @@ You roboticists' mission is to develop an approach to navigate HomeR from the sa
 ![ros_rover](/drawings/ros_rover.drawio.png)
 
 In this project, you and your teammate(s) are expected to achieve following goals. 
-- Develop an autonomous navigation system with the help of the new and upgraded hardware.
-- Adapt new sensors to the ROS framework and come up with navigation strategies based upon them.
-- Analyze the affection of the motion sensors.
+- Adopt more components and orchestrate them under the ROS framework.
+- Develop an autonomous navigation system with the help of the upgraded hardware.
+- Experiment and analyze the affection of the motion sensors.
 
 ## Resources
 - HomeR [documentation](https://linzhanguca.github.io/homer_docs).
