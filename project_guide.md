@@ -19,27 +19,27 @@ In this project, you and your teammate(s) are expected to achieve following goal
 Featured components on HomeR:
 - Two [brushed DC motors with encoders](https://www.pololu.com/product/4805) for the controllable differential drive mobile base.
 - An [inertial measurement unit (IMU)](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf) for extra information of the robot's motion.
-- A [light detection and ranging (LiDAR) sensor](http://bucket.download.slamtec.com/b90ae0a89feba3756bc5aaa0654c296dc76ba3ff/LD108_SLAMTEC_rplidar_datasheet_A1M8_v2.2_en.pdf) for measugin surrounding object's distances.
+- A [light detection and ranging (LiDAR) sensor](http://bucket.download.slamtec.com/b90ae0a89feba3756bc5aaa0654c296dc76ba3ff/LD108_SLAMTEC_rplidar_datasheet_A1M8_v2.2_en.pdf) for measuring surrounding objects' distance.
 
 ## Demonstration Debriefing
 ### Procedure
+Each teammember needs to individually complete the first 4 steps below at least once.
 1. Place the robot on/behind the "Start Line".
 2. Start all ROS nodes required by the autonomous navigation.
 3. Stop the robot and end the navigation with a visible indication.
-4. Distance from the robot to the center of the "Home Base" will be measured.
+4. Distance from the robot to the center of the "Home Base" will be measured to determine your team's bonus and penalty.
 5. (Optional) Take interview, one question for each teammember.
-   
-> [!IMPORTANT]
-> - Demonstrations need to be done **before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
-> - Each team has **5 attempts**. Teams with fewer attempts have higher priority in the cue.
-> - **Changes submitted after the demonstration day will not be graded**.
-> - To secure a good demonstration, make sure you and your teammate(s) practice it a couple times ahead. And the batteries are fully charged.
 
-## Bonus Points
-- Mechanical
-- Electrical
-- LiDAR guided navigation
-- Final distance to homne base
+> [!NOTE]
+> **Bonus Points**:
+> (1%) Copiable Linux commands.
+
+> [!IMPORTANT]
+> This project is the most difficult one among the three this semester.
+Please make sure you are very familiar with the robot and extensive practice ahead of the demonstration is recommended.   
+> - Demonstrations need to be done **on/before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
+> - Each teammember has **5 attempts**. Best record will be used for grading.
+> - **Repository changes submitted after the demonstration day will not be graded**.
 
 
 ## Requirements
