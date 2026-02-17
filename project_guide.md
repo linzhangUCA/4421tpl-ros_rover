@@ -98,8 +98,8 @@ Upload trajectory graph to the repository.
 > - Upload estimated robot trajectory using fused motion sensor data.
 > - Analysis includes fused motion sensing. 
 
-### 4. Other Bonus
-If the team pointed out defects of orignal design and improved them, a 1 to 10 bonus points will be given.
+## 5. Other Bonus
+If a student pointed out defects of orignal designs **and fixed them**, 1 to 10 bonus points will be given.
 
 ## AI Policies
 Please acknowledge AI's contributions according to the policies in the syllabus.
