@@ -22,6 +22,13 @@ Featured components on HomeR:
 - A [light detection and ranging (LiDAR) sensor](http://bucket.download.slamtec.com/b90ae0a89feba3756bc5aaa0654c296dc76ba3ff/LD108_SLAMTEC_rplidar_datasheet_A1M8_v2.2_en.pdf) for measuring surrounding objects' distance.
 
 ## Demonstration Debriefing
+> [!IMPORTANT]
+> This project is the most difficult one among the three this semester.
+Please make sure you are very familiar with the robot and extensive practice ahead of the demonstration is recommended.   
+> - Demonstrations need to be done **on/before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
+> - Each team has **5 attempts**. Bonus/Penalty will be given based on the average of 2 best attempts.
+> - **Repository changes submitted after the demonstration day will not be graded**.
+
 ### Procedure
 Each teammember needs to individually complete the first 4 steps below at least once.
 1. Place the robot on/behind the "Start Line".
@@ -31,15 +38,10 @@ Each teammember needs to individually complete the first 4 steps below at least 
 5. (Optional) Take interview, one question for each teammember.
 
 > [!NOTE]
-> **Bonus Points**:
-> (1%) Copiable Linux commands.
-
-> [!IMPORTANT]
-> This project is the most difficult one among the three this semester.
-Please make sure you are very familiar with the robot and extensive practice ahead of the demonstration is recommended.   
-> - Demonstrations need to be done **on/before** Thursday, 03/12/2026 1:30 PM at the robotics lab (LSCA 105).
-> - Each teammember has **5 attempts**. Best record will be used for grading.
-> - **Repository changes submitted after the demonstration day will not be graded**.
+> **Bonus/Penalty Points**:
+> Let the distance from the robot's final stop to the center of the Home Base be $d$ meters.
+> - Your team will get extra points $$p = 50 (0.5 - d)$$ if the robot entered the circle of the "Home Base".
+> - Your team will lose points $$p = 10 (0.5 - d)$$ if the robot failed to enter the circle of the "Home Base".
 
 
 ## Requirements
