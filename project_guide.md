@@ -51,7 +51,7 @@ Each teammember needs to individually complete the first 4 steps below at least 
 - Demonstrate autonoomus navigation.
 
 ### 1. Usage Instructions
-Assume you are going to use the ROS package(s) developed for this project on a Raspberry Pi with newly installed ROS 2 Jazzy.
+Assume you are going to use the ROS package(s) developed for this project on a Raspberry Pi and a Ubuntu laptop with newly installed ROS 2 Jazzy.
 - Please write down all the key steps to start the navigation in [README](README.md)
 > [!NOTE]
 > **Bonus Points**:
@@ -62,11 +62,11 @@ Describe your navigation strategy with math language.
 Write your methodology down in [README](README.md)
 - If your robot's navigation is broken down into several phases, specify and briefly describe them.
 - For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
-- Write down equations guiding your robot to the destination then plug in actual data/measurements to verify your equations. 
+- Write down equations guiding your robot to the destination(s). 
 
 ### 3. ROS Infrastructure
 - Let `/cmd_vel` topic with [`geometry_msgs/Twist`](https://docs.ros2.org/foxy/api/geometry_msgs/msg/Twist.html) message be the only one taking care of the mobile base's movement.
-Publish `/cmd_vel` topic with reasonable values at appropriate instants to navigate the robot to the **HOME BASE**.
+Publish `/cmd_vel` topic with reasonable values at appropriate instants to navigate the robot to the "Home Base".
 - Publish LiDAR data under the `/scan` topic with [`sensor_msgs/LaserScan`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/LaserScan.html) message (at a reasonable frequency).
 - Publish IMU data under the `/imu` topic with [`sensor_msgs/Imu`](https://docs.ros2.org/foxy/api/sensor_msgs/msg/Imu.html) message at 50 Hz frequency.
 - Publish robot's pose and velocity under the `/odom` topic with [`nav_msgs/Odometry](https://docs.ros2.org/foxy/api/nav_msgs/msg/Odometry.html) message at 50 Hz frequency.
@@ -78,9 +78,10 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 
 > [!NOTE]
 > **Bonus Points**:
+> - Navigate based on estimated odometry (without hard coding). 
 > - LiDAR data is not just published, but also used for navigation (e.g. wall following). 
 > - Publish and broadcast improved odometry by fusing IMU's and encoders' data.
-> - Launch everything with one command.
+> - Launch navigation with one command.
 
 ### 4. Motion Sensing Analysis
 Start a navigation and record the data in `/imu` and `/odom` topics using [`rosbag`](https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Recording-And-Playing-Back-Data/Recording-And-Playing-Back-Data.html).
