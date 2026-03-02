@@ -1,7 +1,7 @@
 # Project Instructions
 
 ## Overview
-The scientists on the Earch are thrilled and encouraged by the successful recovery of Element M2-5 during the R1B rover's mission.
+The scientists on the Earth are thrilled and encouraged by the successful recovery of Element M2-5 during the R1B rover's mission.
 To futher explore the planet, an upgraded rover, HomeR, will be sent to LSC-001e to sample the java over there.
 The geography of the planet did not change much, and the home base is staying at same location.
 You roboticists' mission is to develop an approach to navigate HomeR from the sampling site back to the home base autonomously and safely.  
