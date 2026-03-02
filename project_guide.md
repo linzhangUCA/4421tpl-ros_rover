@@ -58,7 +58,7 @@ Assume you are going to use the ROS package(s) developed for this project on a R
 - (5%) Please write down all the key steps to start the navigation in [README](README.md)
 > [!NOTE]
 > **Bonus Points**:
-> (1%) Copiable Linux commands.
+> (1%) Provide Linux commands with "copy" buttons.
 
 ### 2. (25%) Navigation Strategy
 Describe your navigation strategy with math language. 
