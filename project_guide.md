@@ -51,7 +51,7 @@ Each teammember needs to individually complete the first 4 steps below at least 
 **Deliverables**:
 - Upload ROS package(s) with dedicated executables and launch files for navigation.
 - Write [README](README.md).
-- Demonstrate autonoomus navigation.
+- Demonstrate autonomous navigation.
 
 ### 1. (5%) Usage Instructions
 Assume you are going to use the ROS package(s) developed for this project on a Raspberry Pi and a Ubuntu laptop with newly installed ROS 2 Jazzy.
