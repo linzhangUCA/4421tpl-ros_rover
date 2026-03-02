@@ -43,7 +43,7 @@ Each teammember needs to individually complete the first 4 steps below at least 
 > **Bonus/Penalty Points**:
 > Let the distance from the robot's final stop to the center of the Home Base be $d$ meters.
 > - Your team will get extra points $$p = 50 (0.5 - d)$$ if the robot entered the circle of the "Home Base".
-> - Your team will lose points $$p = 10 (0.5 - d)$$ if the robot failed to enter the circle of the "Home Base".5 
+> - Your team will lose points $$p = 10 (d - 0.5)$$ if the robot failed to enter the circle of the "Home Base"
 > - If at least one wheel stays in between the tracks from end to end, team will get a bonus of 5 points.
 
 
