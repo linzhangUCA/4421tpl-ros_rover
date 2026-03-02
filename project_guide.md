@@ -60,12 +60,12 @@ Assume you are going to use the ROS package(s) developed for this project on a R
 > **Bonus Points**:
 > (1%) Provide Linux commands with "copy" buttons.
 
-### 2. (25%) Navigation Strategy
+### 2. (15%) Navigation Strategy
 Describe your navigation strategy with math language. 
 Write your methodology down in [README](README.md)
 - (5%) Concisely describe steps of the navigation (not operation steps, please focus on robot's decision making).
-- (10%) For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
-- (10%) Write down equations guiding your robot to the destination(s). 
+- (5%) For each phase, clearly define key physics quantities involved using (commonly accecpted) letters/symbols/characters.
+- (5%) Write down equations guiding your robot to the destination(s). 
 
 > **Bonus Points**:
 > (5%) Reasonable software [flowchart](https://www.lucidchart.com/pages/what-is-a-flowchart-tutorial) or [algorithm table](https://www.overleaf.com/learn/latex/Algorithms).
