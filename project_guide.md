@@ -80,7 +80,8 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 - (10%) Define and illustrate `odom` frame and `base_link` frame (from a reasonable viewing angle) in [README](README.md).
 - (5%) Edit related files so that the pakcage(s) can be built by `colcon`. Make sure the executables, launch files, config files, etc. are registered.
 - (5%) Edit `setup.py` and `package.xml` with correct `description`, `maintainer`, `email`, and `license` information.
-- (5%) Illustrate the relationship among your node(s), [`teleop_twist_joy`](https://index.ros.org/r/teleop_twist_joy/#jazzy) node and the [`teleop_twist_keyboard`](https://index.ros.org/r/teleop_twist_keyboard/#jazzy) node use a node graph with topics and messages information. Upload the node graph to [drawings/](drawings/) and **display it in the [README](README.md)**.
+- (5%) Illustrate the relationship among your node(s) with topics and messages in a graph.
+  Upload the node graph and **display it in the [README](README.md)**.
 
 > [!NOTE]
 > **Bonus Points**:
