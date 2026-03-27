@@ -85,9 +85,9 @@ Publish `/cmd_vel` topic with reasonable values at appropriate instants to navig
 
 > [!NOTE]
 > **Bonus Points**:
-> - (10%) Functional navigate based on estimated odometry (without hard coding). 
-> - (10%) LiDAR data is not just published, but also effectively used for navigation (e.g. wall following). 
-> - (5%) Publish and broadcast improved odometry by fusing IMU's and encoders' data.
+> - (5%) Functional navigate based on estimated odometry (without hard coding). 
+> - (10%) Effectively implement wall following using LiDAR scan. 
+> - (1%) Publish and broadcast improved odometry by fusing IMU's and encoders' data.
 > - (1%) Launch navigation with one command.
 
 ### 4. (15%) Motion Sensing Analysis
